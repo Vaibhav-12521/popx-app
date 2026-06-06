@@ -79,14 +79,11 @@
   line-height: 1.5;
   color: var(--heading);
   border-bottom: 1px dashed #b6b6b6;
-  position: relative;
 }
 
-.bio::before {
-  content: '';
-  position: absolute;
-  top: -22px;
-  left: 0;
-  right: 0;
-  border-top: 1px dashed #b6b6b6;
+/* Empty placeholder area carrying the lower dashed separator, matching the design. */
+.spacer {
+  flex: 1;
+  border-bottom: 1px dashed #b6b6b6;
+  margin-bottom: 22px;
 }

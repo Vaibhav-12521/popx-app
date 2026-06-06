@@ -44,6 +44,8 @@ export default function AccountSettings() {
           Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat,
           Sed Diam
         </p>
+
+        <div className={styles.spacer} />
       </section>
     </div>
   )
