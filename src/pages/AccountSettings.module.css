@@ -1,0 +1,92 @@
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+.headerTitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--heading);
+}
+
+.body {
+  flex: 1;
+  background-color: var(--bg);
+  padding: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatarWrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.cameraBadge {
+  position: absolute;
+  right: -2px;
+  bottom: 0;
+  width: 22px;
+  height: 22px;
+  background-color: var(--purple);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--bg);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--heading);
+}
+
+.email {
+  font-size: 14px;
+  color: var(--heading);
+}
+
+.bio {
+  margin-top: 22px;
+  padding-bottom: 22px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--heading);
+  border-bottom: 1px dashed #b6b6b6;
+  position: relative;
+}
+
+.bio::before {
+  content: '';
+  position: absolute;
+  top: -22px;
+  left: 0;
+  right: 0;
+  border-top: 1px dashed #b6b6b6;
+}
