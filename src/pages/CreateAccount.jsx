@@ -4,11 +4,11 @@ import FloatingInput from '../components/FloatingInput.jsx'
 import styles from './CreateAccount.module.css'
 
 const initialForm = {
-  fullName: 'Marry Doe',
-  phone: '+1 234 567 8900',
-  email: 'marry@gmail.com',
-  password: 'Marry@123',
-  company: 'PopX',
+  fullName: '',
+  phone: '',
+  email: '',
+  password: '',
+  company: '',
   isAgency: 'yes',
 }
 

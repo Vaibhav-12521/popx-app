@@ -5,7 +5,7 @@ function getUser() {
     const stored = JSON.parse(localStorage.getItem('popx-user'))
     if (stored?.name) return stored
   } catch {
-    /* ignore malformed storage */
+    return { name: 'Marry Doe', email: 'Marry@Gmail.Com' }
   }
   return { name: 'Marry Doe', email: 'Marry@Gmail.Com' }
 }

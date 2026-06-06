@@ -41,7 +41,6 @@ body {
 }
 
 /* ---------- Mobile frame centered on the page ---------- */
-/* Fluid on small screens, capped at the 375px mobile width on larger ones. */
 .mobile-frame {
   width: 100%;
   max-width: 375px;
@@ -59,7 +58,6 @@ body {
     padding: 16px 0;
   }
   .mobile-frame {
-    /* Fit the viewport height (never taller than the screen), capped for big monitors. */
     min-height: min(760px, 94vh);
     border: 1px solid #ddd;
     border-radius: 4px;

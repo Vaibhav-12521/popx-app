@@ -1,9 +1,5 @@
 import styles from './FloatingInput.module.css'
 
-/**
- * Input with the purple floating label that sits on the top border,
- * matching the PopX form fields. `required` adds the red asterisk.
- */
 export default function FloatingInput({
   id,
   label,
