@@ -41,26 +41,29 @@ body {
 }
 
 /* ---------- Mobile frame centered on the page ---------- */
+/* On phones the frame fills the whole screen. From tablet width up it
+   becomes a centered 375px card so the mobile UI stays the focus. */
 .mobile-frame {
   width: 100%;
-  max-width: 375px;
   min-height: 100vh;
+  min-height: 100dvh;
   background-color: var(--bg);
   position: relative;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 480px) {
   #root {
     align-items: center;
     padding: 16px 0;
   }
   .mobile-frame {
+    max-width: 375px;
     min-height: min(760px, 94vh);
     border: 1px solid #ddd;
     border-radius: 4px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
   }
 }
