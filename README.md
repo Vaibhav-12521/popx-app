@@ -1,56 +1,53 @@
-# PopX — React JS Assignment
+# PopX App
 
-A pixel-perfect implementation of the **PopX** mobile app interface, built in
-React JS from the provided Adobe XD design. The mobile interface stays centered
-on the webpage and navigation between pages is handled with React Router.
+A small React app built from the PopX design as part of a React JS intern task.
+It recreates the mobile screens (Welcome, Login, Create Account and Account
+Settings) and keeps the phone-sized layout centered on the page.
 
 ## Screens
 
-| Route        | Screen                                          |
-| ------------ | ----------------------------------------------- |
-| `/`          | Welcome — Create Account / Already Registered   |
-| `/login`     | Sign in to your PopX account                    |
-| `/register`  | Create your PopX account                        |
-| `/account`   | Account Settings (profile)                      |
+- `/` - Welcome page with Create Account and Login buttons
+- `/login` - Sign in to your PopX account
+- `/register` - Create a new account
+- `/account` - Account settings / profile
 
-Navigation flow: **Welcome → Create Account / Login → Account Settings.**
-The name/email entered on the Login or Create Account screens is carried over
-to the Account Settings screen.
+The name and email entered on the Login or Create Account page are shown on the
+Account Settings page.
 
-## Tech stack
+## Built with
 
-- **React 18** + **Vite** — fast, modern build tooling
-- **React Router v6** — seamless client-side page navigation
-- **CSS Modules** — scoped, hand-written CSS for pixel-perfect styling
-- **Rubik** font (Google Fonts) — matching the design typography
+- React 18
+- Vite
+- React Router
+- CSS Modules
 
-## Getting started
+## Running locally
 
 ```bash
-npm install     # install dependencies
-npm run dev     # start the dev server (http://localhost:5173)
-npm run build   # production build into /dist
-npm run preview # preview the production build locally
+npm install
+npm run dev
 ```
 
-## Project structure
+Then open http://localhost:5173 in your browser.
+
+To make a production build:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Folder structure
 
 ```
 src/
-├── components/
-│   ├── MobileFrame.jsx        # 375px centered mobile frame
-│   ├── FloatingInput.jsx      # reusable floating-label input
-│   └── FloatingInput.module.css
-├── pages/
-│   ├── Welcome.jsx
-│   ├── Login.jsx
-│   ├── CreateAccount.jsx
-│   └── AccountSettings.jsx
-├── App.jsx                    # routes
-├── main.jsx                   # entry + router
-└── index.css                  # design tokens + global styles
+  components/   reusable UI (mobile frame, input field)
+  pages/        the four screens
+  App.jsx       routes
+  main.jsx      app entry
+  index.css     global styles and colors
 ```
 
 ## Deployment
 
-Hosted on Vercel. The production build is fully static (`npm run build` → `/dist`).
+The app is deployed on Vercel as a static build.
